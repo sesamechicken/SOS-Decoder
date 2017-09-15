@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>M-dwarfs SOS Transmission</title>
+  <script type="text/javascript">
+    function decode() {
+	var myValue = document.getElementById('myTextBox').value;
+	var length = myValue.length;
+	var codes = length/3;
+	
+
+	alert(codes);
+      
+      
+}
+    
+  </script>
+</head>
+<body>
+  <h1 id="title">M-dwarfs SOS Transmission</h1>
+
+  <input type="text" id="myTextBox" />
+  <input type="submit" value="Decode" onclick="decode()" />
+  <h2 id="output"></h2>
+</body>
+</html>
