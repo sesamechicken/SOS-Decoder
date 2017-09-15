@@ -7,10 +7,14 @@
 	var myValue = document.getElementById('myTextBox').value;
 	var length = myValue.length;
 	var codes = length/3;
-	var re = new RegExp('SOS', 'g');
-	var output = myValue.match(re);
+	var re = new RegExp(/.{1,3}/g);
+	var outputArray = myValue.match(re);
+	var arrayLength = outputArray.length;
+	for (var i = 0; i < arrayLength; i++)  {
+		alert(outputArray);
+	}
 
-	alert(output);
+	//alert(output);
       
       
 }
@@ -22,6 +26,6 @@
 
   <input type="text" id="myTextBox" />
   <input type="submit" value="Decode" onclick="decode()" />
-  <h2 id="output"></h2>
+  <h2> SOSSPSPOSCQBOOS </h2>
 </body>
 </html>
